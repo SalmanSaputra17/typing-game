@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    
+    <header class="bg-secondary text-center p-3 mb-5">
+        <h1>GoTyping</h1>
+    </header>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="petunjuk">Ketik kata yang diberikan dalam 
+                    <span class="text-success" id="seconds">5</span>
+                    Detik :
+                </p>
+                <h2 class="display-2 mb-5" id="current-word">Hello!</h2>
+                <input type="text" class="form-control form-control-lg" placeholder="Mulai mengetik..." id="word-input" autofocus>
+                <h3 class="mt-3" id="message"></h3>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>Waktu tersisa:
+                            <span id="time">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Score:
+                            <span id="score">0</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>PERINTAH</h5>
+                            <p>
+                                Ketik setiap kata yang diberikan sesuai waktu yang ada untuk mendapatkan score, <strong>untuk memulai lagi</strong>, anda tinggal mengetik kata yang diberikan dan score anda akan di-reset
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
